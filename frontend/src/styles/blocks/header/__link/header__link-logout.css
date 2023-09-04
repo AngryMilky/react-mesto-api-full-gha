@@ -1,0 +1,7 @@
+.header__link-logout {
+  color: #A9A9A9;
+}
+
+.header__link-logout:hover {
+  cursor: pointer;
+}

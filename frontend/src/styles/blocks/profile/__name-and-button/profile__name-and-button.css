@@ -1,0 +1,17 @@
+.profile__name-and-button {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  text-align: left;
+
+}
+
+@media screen and (max-width: 600px) {
+  .profile__name-and-button {
+    display: block;
+    min-width: 0;
+    text-align: center;
+
+  }
+}

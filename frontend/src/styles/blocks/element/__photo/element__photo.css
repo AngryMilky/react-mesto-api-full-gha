@@ -1,0 +1,16 @@
+.element__photo {
+  min-width: 282px;
+  max-width: 282px;
+  min-height: 282px;
+  max-height: 282px;
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.element__photo:hover {
+  cursor: pointer;
+}
