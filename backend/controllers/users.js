@@ -9,6 +9,8 @@ const BadRequestError = require('../errors/bad-request-error');
 const NotFoundError = require('../errors/not-found-error');
 const ConflictError = require('../errors/conflict-error');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
+
 // получение информации о текущем пользователе
 module.exports.getUser = (req, res, next) => {
   User.findById(req.user._id)
