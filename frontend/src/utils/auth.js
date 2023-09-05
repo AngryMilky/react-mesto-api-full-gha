@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://auth.nomoreparties.co';
+export const BASE_URL = 'https://api.milky.students.nomoredomainsicu.ru';
 
 const checkServerResponse = (res) => {
   if (res.ok) {
