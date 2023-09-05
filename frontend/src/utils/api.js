@@ -102,16 +102,8 @@ class Api {
 
 }
 
- 
-
-
-
 const api = new Api({
-  baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-66',
-  headers: {
-    authorization: '7ec07678-8c6d-40ed-9548-222c1487bc48',
-    'Content-Type': 'application/json'
-  }
+  url: 'https://api.milky.students.nomoredomainsicu.ru'
 });
 
 export default api;
