@@ -7,7 +7,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.48.2
+IP 158.160.48.2
 
 Frontend https://mesto.milky.nomoredomainsicu.ru
 
