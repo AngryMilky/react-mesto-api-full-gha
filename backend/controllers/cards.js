@@ -9,7 +9,7 @@ const NotFoundError = require('../errors/not-found-error');
 // показывает все карточки
 module.exports.getCards = (req, res, next) => {
   Card.find({})
-    .then((cards) => res.status(OK).send({ data: cards }))
+    .then((cards) => res.status(OK).send(cards))
     .catch(next);
 };
 
