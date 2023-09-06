@@ -54,9 +54,11 @@ module.exports.createCard = (req, res, next) => {
 
 // поставить лайк карточке
 module.exports.likeCard = (req, res, next) => {
+  const { cardId } = req.params;
+  const userId = req.user._id;
   Card.findByIdAndUpdate(
-    req.params.cardId,
-    { $addToSet: { likes: req.user._id } }, // добавить _id в массив, если его там нет
+    cardId,
+    { $addToSet: { likes: userId } }, // добавить _id в массив, если его там нет
     { new: true },
   )
     .then((card) => {
@@ -76,9 +78,11 @@ module.exports.likeCard = (req, res, next) => {
 
 // удалить лайк с карточки
 module.exports.dislikeCard = (req, res, next) => {
+  const { cardId } = req.params;
+  const userId = req.user._id;
   Card.findByIdAndUpdate(
-    req.params.cardId,
-    { $pull: { likes: req.user._id } }, // убрать _id из массива
+    cardId,
+    { $pull: { likes: userId } }, // убрать _id из массива
     { new: true },
   )
     .then((card) => {
